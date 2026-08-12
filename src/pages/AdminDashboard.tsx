@@ -71,10 +71,11 @@ export function AdminDashboard() {
         <p className="mt-8 text-sm text-navy-700/60">No bookings yet.</p>
       ) : (
         <div className="mt-8 overflow-x-auto rounded-2xl border border-navy-100">
-          <table className="w-full min-w-[720px] text-left text-sm">
+          <table className="w-full min-w-[860px] text-left text-sm">
             <thead className="bg-navy-50 text-navy-900">
               <tr>
                 <th className="px-5 py-3 font-semibold">Student</th>
+                <th className="px-5 py-3 font-semibold">Email</th>
                 <th className="px-5 py-3 font-semibold">Subject</th>
                 <th className="px-5 py-3 font-semibold">Date</th>
                 <th className="px-5 py-3 font-semibold">Time</th>
@@ -87,7 +88,11 @@ export function AdminDashboard() {
                 <tr key={b.id}>
                   <td className="px-5 py-4">
                     <p className="font-medium text-navy-900">{b.student_name}</p>
-                    <p className="text-xs text-navy-700/60">{b.email}</p>
+                  </td>
+                  <td className="px-5 py-4">
+                    <a href={`mailto:${b.email}`} className="text-navy-700/90 hover:text-gold-600 hover:underline">
+                      {b.email}
+                    </a>
                   </td>
                   <td className="px-5 py-4 text-navy-700/90">{b.subject}</td>
                   <td className="px-5 py-4 text-navy-700/90">{b.preferred_date}</td>
