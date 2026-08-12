@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm create *)",
+      "Bash(cd \"/Volumes/WD SSD/AI - Literacy/Claude - Website Builder/claude-website-builder-kit\" && mv temp-app/.gitignore temp-app/.oxlintrc.json . && mv temp-app/* . && rmdir temp-app && ls -la)",
+      "Bash(npm install *)",
+      "Bash(rm -f src/App.css src/assets/hero.png src/assets/vite.svg src/assets/react.svg public/vite.svg)",
+      "Bash(cp \"assets/pathways-tutoring-logo.png\" public/logo.png)",
+      "Bash(ls public *)",
+      "Bash(sips -z 64 64 \"assets/pathways-tutoring-logo.png\" --out public/favicon.png)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(echo \"exit: $?\")",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__supabase__get_publishable_keys",
+      "mcp__supabase__list_tables",
+      "mcp__supabase__apply_migration",
+      "mcp__supabase__execute_sql",
+      "mcp__supabase__deploy_edge_function",
+      "mcp__supabase__get_advisors",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(brew install *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "supabase"
+  ]
+}
